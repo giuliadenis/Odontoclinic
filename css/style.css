@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+
+.wrapper{ /*caixa principal que recebera as outras internas*/
+    display:flex;/*  para transformar em blocos */
+    flex-direction:row; /* row- coloquei em linha, mas temos colunas */
+    flex-wrap: wrap;/* qnd crio caixas elas ficam uma do lado da outra o flex-wrap:wrap dara a quebra quando totalizar 100% */
+    justify-content: center;
+    align-items: center; /* alinhamos os blocos no centro */
+    width:100%;
+    height: auto;
+    background-color: white;
+    padding:0px;
+    }
+.boxBanner{
+  width: 100%;
+  height:auto;
+  margin:10px;
+ }
+.boxConheca{
+    background-color:white;
+    width: 100%;
+    height:50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 180%;
+
+ }
+.boxLogo{
+  background-color:#00869e;
+  width: 20%;
+  height:85px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 0%;
+}
+
+.boxBotoes{
+  background-color: #00869e;
+  width:80%;
+  height:50px;
+  margin:0px;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 2%;
+}
+.boxTratamentos{
+  background-color:#2f3555;
+  width:20%;
+  height:auto;
+  margin:10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:100%;
+  color: white;
+  padding-top: 2%;
+  border-radius: 5%;/*  para arredondar */
+}
+.boxDireita{
+  width: 50%;
+  height: 200px;
+  margin: 10px; /*margem ao redor das caixas para ficarem distantes */
+  border-radius: 5%;
+
+}
+.boxTexto{
+  background-color:white;
+  width: 50%;
+  height:200px;
+  margin: 10px; /*margem ao redor das caixas para ficarem distantes */
+  border-radius: 5%;
+}
+
+.boxInfo{
+  background-color:#00869e;
+  width: 30%;
+  height:150px;
+  padding-left:2%;
+  padding-top: 2%;
+  font-size: 130%;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+} 
+
+
+h1{
+  font-size: 150%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #00869e;
+}
+
+.p1{
+  font-size: 110%;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color:black;
+  padding-left: 3%;
+  padding-right:3%;
+}
+
+
+.boxRodape{
+  background-color:#00536f;
+  width: 100%;
+  height:50px;
+  margin:0px;/*colocque margem se quiser q fique colado na margem do wrapper */
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  padding-top: 1.5%;
+  
+} 
+.tamanhoImagens{
+ width: 100%;
+ height:200px;
+ border-radius: 5%;
+}
+
+.tamanhoBanner{
+ width: 100%;
+ height:400px;
+}
+.tamanhoLogo{
+ width:70%;
+ height:70%;
+ padding-top:3%;
+}
+
+/* BREAKPOINTS- tamanho para cada tipo de tela ex: quero as minhas caixas de tratamentos fiquem menores*/
+
+@media screen and (min-width: 376px) {
+  .boxTratamentos{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1%;
+  }
+  .boxDireita{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .boxTratamentos{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1%;
+  }
+  .boxDireita{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1%;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  .boxTratamentos{
+    width: 15%;
+    float: left;
+    margin-left: 5%;
+    padding: 1%;
+  }
+  .boxDireita{
+    width: 15%;
+    float: left;
+    margin-left: 5%;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .boxTratamentos{
+    width: 20%;
+    float: left;
+    margin-left: 1%;
+    padding: 1%;
+  } 
+  .boxDireita{
+    width: 20%;
+    float: left;
+    margin-left: 1%;
+    padding: 1%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .boxTratamentos{
+    width: 20%;
+    float: left;
+    margin-left: 1%;
+    padding: 1%;
+  }
+  .boxDireita{
+    width: 20%;
+    float: left;
+    margin-left: 1%;
+    padding: 1%;
+  }
+}
+
+
+
+
+
+/*MENU*/
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style: none; /*remover bolinhas*/
+    margin: 0px;
+    padding: 0px;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none; /*remover sublinhado*/
+    color: #000000;
+    padding: 15px 15px 10px 15px;
+}
+
+nav ul li a:hover{ /*hover (mouse sobre o link)*/
+    color: #000000;
+    /*text-decoration: underline;*/
+    border-bottom: #ffffff 2px solid;
+}
+
+
+/*css do "quem somos"*/
+
+.boxImg{
+ width:100%;
+ height:600px;
+ text-align: center;
+}
+
+.tamImagem{
+width:80%;
+height:95%;
+padding-bottom: 10%;
+padding-top:1%;
+}
+
+.textArea{
+    width: 100%;
+    height:50px;
+    margin:0px;/*colocque margem se quiser q fique colado na margem do wrapper */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-top: 1.5%;
+}
+
+.h2{
+    font-size: 170%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #00869e;
+  }
+
+  .p2{
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color:black;
+    padding-left: 8%;
+    padding-right:8%;
+  }
+
+  /* pag alinhamentos */
+
+  .tamImagem2{
+    width:100%;
+    height:90%;
+    padding-top:0%;
+    }
+
+       .p2{
+        font-size: 110%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color:black;
+        padding-left: 8%;
+        padding-right:8%;
+      }
+
+      .p3{
+        font-size: 160%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color:#00869e;
+        padding-left: 8%;
+        padding-right:8%;
+      }
+      .p4{
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #000000;
+        padding-left: 8%;
+        padding-right:8%;
+      }
+      .textArea2{
+        width: 100%;
+        height:50px;
+        margin:0px;/*colocque margem se quiser q fique colado na margem do wrapper */
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        padding-top: 1.5%;
+      }
+
+       .box3{
+        width:100%;
+        height:500px;
+        text-align: center;
+        margin-top:0%;
+      }
+
+
+      /***** CONTATO *****/
+
+      #conteudo_formulário{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+     .boxForm{ 
+        width: 100%;
+        margin: auto;
+        background-color: #fff;
+        height: auto;
+        margin-right: 5%;
+    }
+    
+     form{ 
+        background-color: #fff;
+         width: 80%; 
+         margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 30%;
+    
+    }
+    
+    input, textarea{ 
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: normal;
+       font-size: 1.2em; /*fonte responsiva */
+       background-color: #e0d7d7;
+       padding: 5px;
+       border-style: solid;
+       border-color: #e0d7d7;
+       width: 50%;
+       
+    }
+    
+    label{
+       font-family: Arial, Helvetica, sans-serif;
+       color:#000000;
+       font-size: 1.4em;
+    }
+    
+    textarea:hover{
+      background-color:#e0d7d7;
+    }
+    
+    
+    .botao {
+       font-family: Arial, Helvetica, sans-serif;
+       color:#000000;
+       font-weight: normal;
+       font-size: 1.3em; /*fonte responsiva */
+       background-color: #00869e;
+       padding: 5px;
+       border-color: #00869e;
+       border-style: solid;
+       margin-right: 5%;
+       width: 10%;
+    }
+    
+    #cNasc {
+        width: 15%;
+    }
